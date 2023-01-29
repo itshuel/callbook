@@ -1,3 +1,4 @@
+import os.path
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,6 +81,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = 'static/'
-
+DATA_DIR = os.path.dirname(os.path.dirname(__file__))
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+PUBLIC_DIR = 'public'
+MEDIA_ROOT = os.path.join(DATA_DIR, PUBLIC_DIR, 'media')
+STATIC_ROOT = os.path.join(DATA_DIR, PUBLIC_DIR, 'static')
+STATICFILES_DIRS = (
+    os.path.join(DATA_DIR, 'static'),
+)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

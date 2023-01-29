@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>CallBook - {{ user.name }}</title>
-</head>
-<body>
-  {{ user }}
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CallBook - Главная
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <img class="page-title" src="{% static 'img/callbook.png' %}">
+    <div class="content user-content">
+      <p><b>Фамилия пользователя:</b> Администратор</p>
+      <p><b>Имя пользователя:</b> Администратор</p>
+      <p><b>Статус пользователя:</b> Администратор</p>
+      <p><b>Дата рождения пользователя:</b> 01.01.1970</p>
+      <p><b>Телефон пользователя:</b> 89000000000</p>
+      <p><b>Описание пользователя:</b></p>
+      <p>Какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст. Какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст</p>
+    </div>
+  </body>
 </html>
+
+
