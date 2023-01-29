@@ -21,7 +21,3 @@ def get_user(request, pk):
         return render(request, 'userpage.html', {'user': user})
     except:
         return render(request, 'user404.html')
-    # if user:
-    #     return render(request, 'userpage.html', {'user': user})
-    # else:
-    #     return render(request, 'user404.html')
