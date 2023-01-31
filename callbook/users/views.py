@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Person
 
@@ -10,11 +11,13 @@ def userspage(request):
             return redirect('/users/{}'.format(user.id))
         else:
             return render(request, 'user404.html')
-    return render(request, 'users.html')
+    response = render(request,'users.html')
+    response.set_cookie('admin', 'false')
+    return response
 
 
 def get_user(request, pk):
-    if pk == 88:
+    if pk == 88 and request.COOKIES.get('admin') == 'true':
         return render(request, 'flag.html', {'flag': 'kvvu{test_flag}'})
     try:
         user = Person.objects.get(id=pk)
