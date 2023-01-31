@@ -1,4 +1,6 @@
-callbook:
+version: '3'
+services:
+  callbook:
     build:
         context: ./callbook
         dockerfile: Dockerfile
