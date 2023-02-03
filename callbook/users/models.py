@@ -15,3 +15,8 @@ class Person(models.Model):
     class Meta:
         verbose_name = 'Пользователь'
         verbose_name_plural = 'Пользователи'
+
+
+# for i in range(len(fi)):
+#    ...:     Person.objects.create(name=''.format(fi[i].split()[0]), surname=''.format(fi[i].split()[1]), date='{}-{}-{}'.format(random.randint(1970, 2000), random.randint(1, 12), random.randint(1, 28
+#    ...: )), status='Пользователь', phonenumber='{}'.format(random.randint(89000000000, 89009999999)), info='Обычный пользователь')
