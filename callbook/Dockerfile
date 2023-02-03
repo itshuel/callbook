@@ -8,4 +8,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 EXPOSE 8005
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8005"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8005", '--insecure']
