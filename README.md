@@ -17,7 +17,7 @@
 
 Видим директорию users, попробуем перейти на нее: 
 
-![image](https://user-images.githubusercontent.com/64978486/217245961-307025bb-5334-4767-9588-70a9cffba4fe.png)
+![1](https://user-images.githubusercontent.com/64978486/217248189-fbd8a034-e864-4356-b3fb-26c875d360ba.png)
 
 Попробуем что-либо ввести в нее:
 
@@ -39,4 +39,4 @@
 
 ![1](https://user-images.githubusercontent.com/64978486/217247814-7e21f0c7-9783-429a-9140-491d39cc9d68.png)
 
-Флаг: kvvu{c@l18ooK_M4d3_bY_DjAng0}
+Флаг: <b>kvvu{c@l18ooK_M4d3_bY_DjAng0}</b>
